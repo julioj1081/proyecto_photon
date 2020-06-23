@@ -1,0 +1,147 @@
+//sass --watch sass:css
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(0,0,0,0.01);
+}
+header{
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh;
+    justify-content: center;
+    align-items: center;
+}
+header h2{
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 10;
+}
+#logo{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    cursor: grab;
+}
+.search-form{
+    width: 60%;
+    display: flex;
+    flex-basis: content;
+    padding: 2rem;
+ 
+    input{
+        font-size: 1.4rem;
+        padding: 0.5rem;
+        width: 100%;
+        border: none;
+        border: 1px solid #2D24E3;
+    }
+    input:checked{
+        color: green;
+    }
+    button{
+        margin-left: 1rem;
+        border: none;
+        padding: 1rem;
+        font-size: 1rem;
+        background: #5C3BE3;
+        color: white;
+        cursor: pointer;
+        transition: all .8s ease;
+    }
+    button:hover{
+        background: rgb(0,0,0,0.8);
+        color: white;
+    }
+}
+.gallery-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+   p{
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: rgb(56, 56, 56);
+    }
+    p:hover{
+        
+    }
+   a{
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+        color: #9B6BF5;
+        text-decoration: none;
+    }
+    
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    padding: 2rem 2rem;
+    width: 80%;
+    margin:auto;
+    row-gap: 5rem;
+    column-gap: 3rem;
+}
+
+.gallery-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Boton de mas*/
+.nav-button{
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .more{
+        border: none;
+        padding: 1rem 3rem;
+        font-size: 1rem;
+        background: rgb(74,68,131);
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        cursor: pointer;
+        transition: all .8s ease-in-out;
+    }
+}
+.more:hover{
+    background: rgb(0,0,0,0.8);
+    color: white;
+}
+
+footer{
+    margin-top: -3rem;
+    height: 10vh;
+    width: 100%;
+    margin: auto;
+    background: rgb(0,0,0,0.9);
+    
+    .contenedor{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        height: 10vh;
+        padding: 1rem;
+        p{  
+            display: flex;
+            justify-content: flex-end;
+            color: white;
+            font-size: 1em;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 100;
+            font-weight: normal;
+        }
+    }
+}
